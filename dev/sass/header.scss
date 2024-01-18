@@ -19,12 +19,15 @@
         width: 100%;
         display: flex;
         display: none;
+        &.show {
+            display: flex;
+        }
        
         &-list {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            max-width: 602px;
+            max-width: 622px;
             width: 100%;
             margin: 4px auto 0;
             padding: 0;
@@ -39,12 +42,17 @@
         }
       
     }
-
     .btn {
         padding: 13px 22px;
     }
-
 }
-.header__nav  {
-    display: none;
- }
+
+.btn-burger {
+    padding: 19px;
+    border: 1px solid red;
+    background: url(assets/img/icon-burger.svg) center no-repeat;
+
+    &.open {
+        background: url(assets/img/icon-burger-close.svg) center no-repeat;
+    }
+}
