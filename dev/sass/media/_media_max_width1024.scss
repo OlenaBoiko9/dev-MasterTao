@@ -4,20 +4,37 @@
         padding-right: $container-mobile-padding;
     }
     .header {
-        padding: 17px 0 15px;
+        padding: 18px 0 15px;
+        .container {
+            padding-top: 1px;
+            padding-bottom: 3px;
+        }
+        &__logo {
+            max-width: 126px;
+        }
         &__nav {
             position: fixed;
-            inset: 90px 5px 5px;
+            inset: 72px 5px 5px;
             flex-direction: column;
-            padding: 15px;
-            background-color: #363A4D;
+            padding: 15px 40px 60px;
+            background-color: $bg-secondary;
+            
             .btn {
+                justify-content: center;
+                padding: 22px;
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+                padding: 22px;
                 justify-content: center;
             }
         }
         &__nav-list {
             flex-direction: column;
-            margin-bottom: 48px;
+            margin: 22px auto;
+        }
+        &__nav-item {
+            margin-bottom: 11px;
         }
         &__nav-item-link {
             font-size: 24px;
