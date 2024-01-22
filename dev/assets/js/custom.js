@@ -1,10 +1,10 @@
   $(document).ready(function(){
       $('#banner').slick({
           // setting-name: setting-value
-          arrows: false,
-          dots: false,
+          arrows: true,
+          dots: true,
           fade: true,
-
+          appendArrows: $('.banner-arrows')
       });
   
       const burger = document.querySelector('.btn-burger');
