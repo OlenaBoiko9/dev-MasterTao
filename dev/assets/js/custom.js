@@ -4,7 +4,15 @@
           arrows: true,
           dots: true,
           fade: true,
-          appendArrows: $('.banner-arrows')
+          appendArrows: $('.banner-arrows'),
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                arrows: false,
+              }
+            },
+          ]
       });
   
       const burger = document.querySelector('.btn-burger');

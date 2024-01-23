@@ -6,10 +6,10 @@
                 height: 700px;
                 background-repeat: no-repeat;
                 background-size: cover;
+                background-position: center;
                 display: flex;
                 align-items: center;
-                padding-bottom: 64px;
-                border-radius: 20px;
+                padding: 0 92px 64px;
             }
             
             &-title {
