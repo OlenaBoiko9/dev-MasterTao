@@ -1,0 +1,13 @@
+.calculation {
+    @extend .charter;
+} 
+.calculation-form {
+    max-width: 625px;
+    background-color: $bg-secondary;
+}
+.input-row {
+    display: flex;
+}
+.input-column {
+    width: 100%;
+}
