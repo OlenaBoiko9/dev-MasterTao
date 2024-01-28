@@ -14,7 +14,6 @@
             },
           ]
       });
-  
       const burger = document.querySelector('.btn-burger');
       const nav = document.querySelector('.header__nav');
   
@@ -25,18 +24,29 @@
   
       burger.addEventListener('click', toggleMenu);
 
-      const fileInput = document.querySelector('#fileInput');
-      const fileName = document.querySelector('#file-name');
 
-      fileInput.addEventListener('change', function () {
-        // fileName.innerHTML =  fileInput.value;   long name
-        fileName.innerHTML = this.files[0].name;   // short name
-      })
-     
-      const typeTheckbox = document.querySelector('[type=checkbox]');
+    const checkboxes = document.querySelectorAll('[type=checkbox]')
+    if (checkboxes.length > 0) {
+      checkboxes.forEach(checkbox => { 
+        checkbox.closest('.input-column').classList.add('column-checkbox')  
+      })  
+    }
 
-      typeTheckbox.closest('.input-column').classList.add('column-checkbox')
+    const file = document.querySelectorAll('.input-file')
 
+    if (file.length > 0) {
+      file.forEach(item => { 
+      item.closest('.input-column').style.paddingTop = '6px'
+    });
+  }
+
+      const arrayBurger = document.querySelectorAll('.hamburger')
+
+      if (arrayBurger.length > 0) {
+      arrayBurger.forEach(item => { 
+      item.addEventListener('click', function(){
+        item.classList.toggle('is-active');
+    });
   });
-  
-  
+}
+}); 
