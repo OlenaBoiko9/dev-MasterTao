@@ -19,6 +19,7 @@
         width: 100%;
         display: flex;
         display: none;
+        z-index: 1;
         &.show {
             display: flex;
         }

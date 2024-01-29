@@ -40,13 +40,15 @@
     });
   }
 
-      const arrayBurger = document.querySelectorAll('.hamburger')
+  const arrayBurgers = document.querySelectorAll('.hamburger')
 
-      if (arrayBurger.length > 0) {
-      arrayBurger.forEach(item => { 
-      item.addEventListener('click', function(){
-        item.classList.toggle('is-active');
-    });
-  });
-}
-}); 
+  if (arrayBurgers.length > 0) {
+      arrayBurgers.forEach(item => {
+        item.addEventListener('click', function(){
+          item.classList.toggle('is-active');
+      })
+    })
+  }
+
+});
+
