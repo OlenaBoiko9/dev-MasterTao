@@ -14,15 +14,38 @@
             },
           ]
       });
-      const burger = document.querySelector('.btn-burger');
-      const nav = document.querySelector('.header__nav');
-  
-      const toggleMenu =()=> {    
-          burger.classList.toggle('open');
-          nav.classList.toggle('show');
-      }
-  
-      burger.addEventListener('click', toggleMenu);
+
+      mobileOnlySlider("#slider-advantages", true, false, 1024);
+
+      function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
+        var slider = $($slidername);
+        var settings = {
+          mobileFirst: true,
+          dots: $dots,
+          arrows: $arrows,
+          responsive: [
+            {
+              breakpoint: $breakpoint,
+              settings: "unslick"
+            }
+          ]
+        };
+      
+        slider.slick(settings);
+      
+        $(window).on("resize", function () {
+          if ($(window).width() > $breakpoint) {
+            return;
+          }
+          if (!slider.hasClass("slick-initialized")) {
+            return slider.slick(settings);
+          }
+        });
+      } // Mobile Only Slider
+
+
+
+
 
 
     const checkboxes = document.querySelectorAll('[type=checkbox]')
@@ -41,14 +64,20 @@
   }
 
   const arrayBurgers = document.querySelectorAll('.hamburger')
+  const nav = document.querySelector('.header__nav');
 
   if (arrayBurgers.length > 0) {
       arrayBurgers.forEach(item => {
         item.addEventListener('click', function(){
           item.classList.toggle('is-active');
+          nav.classList.toggle('show');
       })
     })
   }
-
 });
 
+function addClassCharter(){
+  const section = document.querySelectorAll('section')
+  section.forEach(item => item.classList.add('charter'))
+}
+document.querySelector('.home-page') ? addClassCharter() : null;

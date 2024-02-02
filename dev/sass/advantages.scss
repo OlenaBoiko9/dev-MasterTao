@@ -1,0 +1,30 @@
+.advantages {
+    @include default-bg;
+    .row {
+        row-gap: 48px;
+    }
+}
+.advantage {
+    text-align: center;
+}
+.icon-box {
+    height: 113px;
+    width: 113px;
+    border: 1px solid hwb(138 5% 40%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 22px;
+    padding: 10px;
+}
+.icon-box img {
+    background: #89C249;
+    ;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: none;
+}
+.advantage-description {
+    font-weight: 400;
+}
