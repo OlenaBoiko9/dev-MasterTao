@@ -4,8 +4,17 @@
     max-width: 360px;
     border-radius: 20px;
     text-align: center;
+    overflow: hidden;
     > .img-box {
+        height: 229px;
         margin: 0 -20px 27px;
+        display: flex;
+        justify-content: center;
+       
+        img {
+            object-fit: cover;
+            object-position: center;
+        }
     }
     &_title {
         margin-bottom: 12px;
@@ -15,13 +24,21 @@
         justify-content: center;
         gap: 35px;
         margin-bottom: 7px;
+       
         &-item {
             display: flex;
             gap: 7px;
+            .img-box {
+                width: 24px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
     &_price {
-        margin-bottom: 22px;
+        margin-bottom: 11px;
         span {
             font-size: 22px;
             &:first-child {
@@ -40,5 +57,28 @@
             justify-content: center;
             padding: 13px 10px;
         }
+    }
+}
+.slider-template {
+    margin: 0 -15px;
+    .slick-slide {
+        margin: 0 15px;
+    }
+    .template-card {
+        margin: 0 auto;
+    }
+    .slick-arrow {
+        position: absolute; 
+        top: calc(50% - 20px);
+        z-index: 1;
+    }
+    .slick-prev {
+        left: -70px;
+        transform: translate(0, -50%) rotate(180deg);
+       
+    }
+    .slick-next {
+        right: -70px;
+        transform: translate(0, -50%);
     }
 }

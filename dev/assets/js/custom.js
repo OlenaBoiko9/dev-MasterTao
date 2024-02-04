@@ -72,9 +72,30 @@
 /*slider template*/ 
        $('.slider-template').slick({
         infinite: true,
-        arrows: false,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1400,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 1025,
+            settings: {
+              slidesToShow: 1,
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              dots: true,
+              arrows: false
+            }
+          },
+        ]
       });
 
 
