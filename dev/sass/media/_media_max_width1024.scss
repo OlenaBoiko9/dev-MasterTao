@@ -6,7 +6,7 @@
         padding-left: $container-mobile-padding;
         padding-right: $container-mobile-padding;
     }
-
+    
     .header {
         padding: 18px 0 15px;
         .container {
@@ -90,20 +90,6 @@
         margin-bottom: 35px;
     }
     .calculation-decoration  {
-                    
         display: none;
-    }    
-    .advantages {
-        @include default-bg-mobile;
-    }
-   
-    .advantage-description {
-        margin-bottom: 48px;
-    }
-    
-}
-
-
-    
-    
-    
+    } 
+}   

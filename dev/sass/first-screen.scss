@@ -1,6 +1,7 @@
 .first-screen {
     @extend .charter;
     position: relative;
+    margin-bottom: 100px;
 }
 .banner {
     .slick-slide {
