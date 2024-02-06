@@ -109,17 +109,17 @@
 
 
   
-  const arrayBurgers = document.querySelectorAll('.hamburger')
-  const nav = document.querySelector('.header__nav');
+  // const arrayBurgers = document.querySelectorAll('.hamburger')
+  // const nav = document.querySelector('.header__nav');
 
-  if (arrayBurgers.length > 0) {
-      arrayBurgers.forEach(item => {
-        item.addEventListener('click', function(){
-          item.classList.toggle('is-active');
-          nav.classList.toggle('show');
-      })
-    })
-  }
+  // if (arrayBurgers.length > 0) {
+  //     arrayBurgers.forEach(item => {
+  //       item.addEventListener('click', function(){
+  //         item.classList.toggle('is-active');
+  //         nav.classList.toggle('show');
+  //     })
+  //   })
+  // }
 });
 
 
