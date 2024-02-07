@@ -1,7 +1,5 @@
 .header {
     padding: 27px 0 39px;
-   
-
     .container {
         display: flex;
         justify-content: space-between;
@@ -15,7 +13,6 @@
             max-height: 60px;
         }
     }
-
     &__nav {
         width: 100%;
         display: flex;
@@ -24,7 +21,7 @@
         &.show {
             display: flex;
         }
-       
+    
         &-list {
             display: flex;
             align-items: center;

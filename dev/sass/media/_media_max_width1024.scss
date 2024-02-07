@@ -22,17 +22,11 @@
             flex-direction: column;
             padding: 15px 40px 60px;
             background-color: $bg-secondary;
-            
-            .hamburger {
-                justify-content: center;
-                padding: 22px;
-                width: 100%;
-                max-width: 320px;
-                margin: 0 auto;
-                padding: 22px;
-                justify-content: center;
-            }
         }
+        .hamburger {
+            display: block;
+           }
+           
         &__nav-list {
             flex-direction: column;
             margin: 22px auto;
