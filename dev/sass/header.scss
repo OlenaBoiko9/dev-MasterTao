@@ -1,5 +1,6 @@
 .header {
-    padding: 25px 0 39px;
+    padding: 27px 0 39px;
+    margin-right: -47px;
 
     .container {
         display: flex;
@@ -42,7 +43,7 @@
             }
         }
     }
-    .btn {
+    .hamburder {
         padding: 13px 22px;
     }
 }
@@ -58,6 +59,7 @@
     padding: 1.3px 13.5px;
     border: none;
     position: relative;
+    display: none;
     
     &:before,
     &:after {

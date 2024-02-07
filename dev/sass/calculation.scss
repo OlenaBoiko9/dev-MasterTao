@@ -1,5 +1,6 @@
 .calculation {
     @extend .charter;
+    margin-right: -45px;
  
 } 
 .calculation-row {
@@ -9,7 +10,7 @@
 .calculation-form {
     min-width: 626px;
     background-color: $bg-secondary;
-    padding: 48px 50px 61px;
+    padding: 46px 50px 61px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
