@@ -300,9 +300,9 @@ ul.slick-dots {
         margin-top: 0;
         margin-left: auto;
         margin-right: auto;
-        // margin-bottom: 100px;
+        margin-bottom: $section-margin-lg;
         max-width: 1920px;
-        // margin-right: -50px;
+      
 
     &.container-fluid {
         padding: 90px 85px 100px;
@@ -354,9 +354,11 @@ ul.slick-dots {
        height: 2px;
        background-color: $color-secondary;
     }
+
     &.col-lg-7 {
        margin-bottom: 35px;
        text-align: left;
+       
        h2 {
            &:after {
               content: "";
@@ -412,3 +414,7 @@ ul.slick-dots {
     }
 }
 
+.advantages,
+.services {
+    @include default-bg;
+}
