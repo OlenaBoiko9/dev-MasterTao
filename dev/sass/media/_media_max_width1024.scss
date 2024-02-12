@@ -69,19 +69,20 @@
         }        
     }
     .banner-title {
-        font-size: 32px;
-        margin-bottom: 10px;  
+        font-size: 32px; 
+        margin-bottom: 12px;
         max-width: 280px;
     }  
     .banner-subtitle {
         font-size: 16px;
-        margin-bottom: 18px;  
+        margin-bottom: 22px;
         max-width: 260px;
     }
     .container {
     .title-template {
         text-align: center;
-        padding-bottom: 12px;
+   
+        padding-bottom: 17px;
         margin-bottom: 0 auto 35px;
 
         h2 {
@@ -100,6 +101,9 @@
         }
     }
 
+    .calculation-row {
+        padding-top: 21px;
+    }
     .calculation-form {
         margin: 0 auto;
         padding: 48px 30px 34px;
@@ -133,17 +137,20 @@
     .slider-template {
         width: 390px;
         margin: 0 auto;
-    }
-    .slick-slide {
-            margin: 0 15px;
-    }
 
+        .slick-slide {
+            margin: 0 15px;
+        }
+    }
+  
     .charter {
-        margin-bottom: $section-margin;
+     margin-bottom: 54px;   
     }
       
     .advantages,
     .services {
             @include default-bg-mobile;
+            padding: 55px 0 42px;
         }
+        
 }   
