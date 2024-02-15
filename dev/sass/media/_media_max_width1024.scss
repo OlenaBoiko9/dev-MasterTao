@@ -2,43 +2,60 @@
     h2 {
         font-size: 24px;
     }
+
     .container {
         padding-left: $container-mobile-padding;
         padding-right: $container-mobile-padding;
     }
-    
+
+
     .header {
-        padding: 18px 0 15px;
+        padding: 17px 0 15px;
+
         .container {
             padding-top: 1px;
             padding-bottom: 3px;
         }
+
         &__logo {
             max-width: 126px;
         }
+
         &__nav {
             position: fixed;
-            inset: 72px 5px 5px;
+            inset: 71px 0 0;
             flex-direction: column;
             padding: 15px 40px 60px;
             background-color: $bg-secondary;
-        }
+            }
+
         .hamburger {
-            display: block;
-           }
-           
+             display: block;
+            }
+
+        .btn-primary {
+            width: 100%;
+            max-width: 320px;
+            margin: 0 auto;
+            padding: 22px;
+            justify-content: center;
+            }   
+
         &__nav-list {
             flex-direction: column;
             margin: 22px auto;
-        }
+            }
+
         &__nav-item {
             margin-bottom: 11px;
         }
+
         &__nav-item-link {
             font-size: 24px;
             line-height: 222%;
         }
     }
+   
     .banner {
         padding: 0;
         .slick-slide {
@@ -62,34 +79,38 @@
                 padding: 0;
                 z-index: 1;
                 margin-top: -55px;
+             }
             }
+            .btn-lg {
+                padding: 19.6px 29px;
+            }        
         }
-        .btn-lg {
-            padding: 19.6px 29px;
-        }        
-    }
-    .banner-title {
-        font-size: 32px; 
-        margin-bottom: 12px;
-        max-width: 280px;
-    }  
-    .banner-subtitle {
-        font-size: 16px;
-        margin-bottom: 22px;
-        max-width: 260px;
-    }
-    .container {
-    .title-template {
-        text-align: center;
-   
-        padding-bottom: 17px;
-        margin-bottom: 0 auto 35px;
+        .banner-title {
+            font-size: 32px; 
+            margin-bottom: 8px;
+            max-width: 280px;
+        }  
+        .banner-subtitle {
+            font-size: 16px;
+            margin-bottom: 22px;
+            max-width: 260px;
+        }
+        .first-screen {
+            margin-bottom: 54px;
+        }
 
-        h2 {
+        .container {
+        .title-template {
             text-align: center;
-         }
+            padding-bottom: 5px;
+            margin-bottom: 0 auto 35px;
+
+             h2 {
+                  text-align: center;
+             }
 
             &.col-lg-7 {
+                margin-bottom: 56px;
                 &:after {
                     display: block;
                 }
@@ -101,12 +122,9 @@
         }
     }
 
-    .calculation-row {
-        padding-top: 21px;
-    }
     .calculation-form {
         margin: 0 auto;
-        padding: 48px 30px 34px;
+        padding: 54px 30px 34px;
     }
 
     .calculation-decoration  {
@@ -125,38 +143,233 @@
                 }
         }
     }
-
     .column-checkbox {
         padding-top: 8px;
         margin: 0 0 -8px 0;
     }
    
-    .advantage-description {
+    .advantages {
+    padding: 55px 0 60px;
+   }
+   
+   .advantage-description {
         margin-bottom: 48px;
     }
+    
     .slider-template {
         width: 390px;
         margin: 0 auto;
-
+    
         .slick-slide {
             margin: 0 15px;
         }
     }
-  
+    
     .charter {
-     margin-bottom: 54px;   
+        margin-bottom: $section-margin;
     }
-      
-    .advantages,
-    .services {
-        padding: 55px 0 42px;
-            &:before {
-                border-radius: 0;
-                left: 0;
-                right: 0;
+    
+    .about {
+         margin-bottom: $section-margin;
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
-        }     
- }
-        
-        
+    
+            .title-template {
+                margin-top: 0;
+                margin-bottom: 25px;
+                &:after {
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                }
+            }
+    
+            .about-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 20px;
+    
+                p {
+                    font-size: 16px;
+                    line-height: 149.5%; /* 23.92px */
+                    text-align: justify;
+                    margin-bottom: 20px;
+                }
+            }
+    
+            .about__img-box {
+                margin-left: 0;
+    
+                .img-fluid {
+                    height: 277px;
+                }
+            }
+        }
+    .faq { 
+        margin-bottom: $section-margin;
+
+        .title-template {
+            margin-bottom: 40px;
+        }
+
+        .accordion {
+            margin-bottom: 28px;
+        }
+
+        .accordion-body {
+            padding-right: 24px;
+            padding-left: 22px;
+            font-size: 14px;
+            padding-bottom: 12px;
+        }
+
+        .accordion-item {
+            margin-bottom: 14px;
+        }
+
+        .accordion-item:last-child {
+            .accordion-button {
+                padding: 18.5px 24px;
+                &:after {
+                margin-left: auto;
+            }
+            }
+        }
+
+        .accordion-button:not(.collapsed) {
+            padding: 18px 24px 0 24px;
+        }
+
+        .accordion-button::after {
+            margin-left: 40px;
+        }
+
+        .d-flex {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .faq__form-title {
+            text-align: center;
+        }
+
+        .faq__form-subtitle {
+            text-align: center;
+        }
+
+        .accordion-button {
+            font-size: 16px;
+            padding: 12px 24px;
+        }
+
+        .faq__form {
+            width: 335px;
+            padding: 38px 20px;
+            margin-left: 0;
+
+            .btn-lg {
+                .icon {
+                    margin: 0 -14px 0 auto;
+                }
+            }
+        }
+    } 
+    .seo {
+        padding: 0 0 56px;
+       
+        &:before {
+            border-radius: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .title-template {
+            margin-bottom: 50px;
+            margin-top: -37px;
+        }
+
+        .container {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .d-flex {
+            flex-direction: column-reverse;
+            gap: 2px;
+            align-items: center;
+
+            &:last-of-type {
+                flex-direction: column;
+            }
+        }
+    .seo-text {
+        max-width: 100%;
+        margin-bottom: 10px;
+        p {
+        font-size: 16px;
+        text-align: justify;
+        line-height: 149.5%;
+        }
+    }
+    .seo-img {
+        margin-bottom: 36px;
+        .img-fluid {
+            width: 335px;
+            height: 220px;
+        }
+    }
+    .seo-button {
+        margin-top: 28px;
+    }
+  } 
+  .footer {
+    .transportation-footer,
+    .services-footer,
+    .info-footer {
+        display: none;
+    }
+    .container {
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+
+    .container:before {
+        width: 335px;
+        height: 2px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .container {
+        .main-info {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            &-footer {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+   .calculation,
+   .advantages,
+   .delivery,
+   .services
+    {
+        margin-bottom: $section-margin;
+   }   
+   .advantages,
+    .services {
+     @include default-bg-mobile;
+    }
    
+}
+
+
