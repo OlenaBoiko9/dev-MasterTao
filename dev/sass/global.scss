@@ -328,6 +328,26 @@ ul.slick-dots {
         }
     } 
 }
+
+section {
+    .title-template {
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: calc(100% - 2px);
+            transform: translate(-50%, 0);
+            width: 85px;
+            height: 2px;
+            background-color: $color-primary;  
+        }
+    }
+    &:nth-child(2n) .title-template {
+        &::after {
+            background-color: $color-secondary;  
+        } 
+    }
+}
 .title-template {
        position: relative;
        text-align: center;
@@ -344,16 +364,16 @@ ul.slick-dots {
        font-size: 24px;
        line-height: 1.25;
     }
-    &:after {
-       content: "";
-       position: absolute;
-       left: 50%;
-       top: calc(100% - 2px);
-       transform: translate(-50%, 0);
-       width: 85px;
-       height: 2px;
-       background-color: $color-secondary;
-    }
+    // &:after {
+    //    content: "";
+    //    position: absolute;
+    //    left: 50%;
+    //    top: calc(100% - 2px);
+    //    transform: translate(-50%, 0);
+    //    width: 85px;
+    //    height: 2px;
+    //    background-color: $color-secondary;
+    // }
 
     &.col-lg-7 {
        margin-bottom: 35px;
